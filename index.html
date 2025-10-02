@@ -1,54 +1,67 @@
-<!-- falta: ícones, transparência, transição, fontes-->
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Isadora, CS student and future tech overlord.">
     <title>Isadora Aguirre Dal Conte</title>
     <link rel="stylesheet" href="style.css">
+    <!-- ícones minimalistas e fontes bonitinhas -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- música de fundo -->
-    <audio id="bg-music" src="assets/musica.mp3" loop></audio>
+    <audio id="bg-music" src="assets/musica.mp3" autoplay loop></audio>
 
     <!-- tela inicial "interativa" para a música começar quando o site abre -->
     <!-- foi uma gambiarra pois a música só tocava quando clicava no ícone-->
     <div id="start-screen">
         <h1 id="press-start">PRESS ENTER TO START</h1>
+        <h2 id="subtitle">(warning: music playing in 3...2..1...)</h2>
     </div>
+
     <div id="site-content">
         <!-- ícone para mutar -->
-        <button id="music-toggle" class="music-btn" aria-label="Pausar música">🔊</button>
+        <button id="music-toggle" class="music-btn" aria-label="Pausar música">
+            <i data-lucide="volume-2"></i>
+        </button>
 
         <!-- cursor com bolinha-->
-        <div id="custom-cursor"></div>
+        <div class="cursor-dot"></div>
 
         <!-- barra de navegação-->
         <nav class="navbar">
+            <div class="logo">.・。.・゜✭・.・✫・゜・。.・゜✭・.・✫・゜・。.・゜✭・.</div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#home"><i data-lucide="home"></i></a></li>
+                <li><a href="#about me"><i data-lucide="user"></i></a></li>
+                <li><a href="#skills"><i data-lucide="layers"></i></a></li>
+                <li><a href="#education"><i data-lucide="book-open"></i></a></li>
+                <li><a href="#experience"><i data-lucide="briefcase"></i></a></li>
+                <li><a href="#projects"><i data-lucide="code"></i></a></li>
+                <li><a href="#contact"><i data-lucide="mail"></i></a></li>
             </ul>
         </nav>
+
         <!-- hero = destaque, 1 por página, sempre no topo da página -->
         <header id="home" class="hero">
             <h1>Isadora Aguirre Dal Conte</h1>
-            <p class="tagline">Estudante</p>
+            <p class="tagline">Estudante de Ciência da Computação</p>
             <div class="hero-icons">
-                <a href="LEMBRAR DE COLOCAR LINKEDIN AQUI" target="_blank">LinkedIn</a> |
-                <a href="LEMBRAR DE COLOCAR git" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/isadora-aguirre-dal-conte-a1b47b2b1" target="_blank"><i
+                        data-lucide="linkedin"></i></a>
+                <a href="https://github.com/isaguirredc" target="_blank"><i data-lucide="github"></i></a>
             </div>
-            <div id="clock" class="clock"></div>
         </header>
 
         <main>
-            <section id="about" class="section">
+            <section id="about me" class="section">
+                <!-- inserir gif-->
+                <img src="assets/dj.gif" alt="Gif animado." class="about-gif">
                 <h2>Sobre Mim</h2>
                 <div class="card">
                     <p>blablabla.</p>
@@ -56,22 +69,70 @@
             </section>
 
             <section id="skills" class="section">
-                <h2>Habilidades</h2>
-                <ul>
-                    <li>1</li>
-                    <li>1</li>
-                    <li>1</li>
-                </ul>
-            </section>
+                <!-- gif -->
 
-            <section id="contact" class="section">
-                <h2>Contato</h2>
-                <p>isadalconte@gmail.com</p>
-            </section>
+                <section id="skills" class="section">
+                    <h2>Habilidades</h2>
+                    <div class="card-grid">
+                        <div class="skill-card"><i data-lucide="code"></i>
+                            <p>HTML / CSS / JS</p>
+                        </div>
+                        <div class="skill-card"><i data-lucide="monitor"></i>
+                            <p>UI Design</p>
+                        </div>
+                        <div class="skill-card"><i data-lucide="cpu"></i>
+                            <p>Redes / Cisco</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="education" class="section">
+                    <!-- inserir gif-->
+                    <h2>Educação</h2>
+                    <div class="card">
+                        <h3>Ciência da Computação - UTFPR</h3>
+                        <p>2023 - presente</p>
+                    </div>
+                </section>
+
+                <section id="experience" class="section">
+                    <!-- inserir gif-->
+                    <h2>Experiência profissional</h2>
+                    <div class="card">
+                        <h3>Estágio em Suporte de TI - Prefeitura Municipal de Passo Fundo</h3>
+                        <p>2024 - presente</p>
+                        <ul <li>aaaaaaaaaaa.</li>
+                            <li>bbbbbbbbbbbb.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="projects" class="section">
+                    <h2>⋆ Projetos ⋆</h2>
+                    <div class="card">
+                        <h3>Projeto 1</h3>
+                        <p>Descrição do projeto 1.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Projeto 2</h3>
+                        <p>Descrição do projeto 2.</p>
+                    </div>
+
+                    <section id="contact" class="section">
+                        <h2>Contato</h2>
+                        <div class="card">
+                            <p>Email: <strong>isaguirredc@gmail.com</strong></p>
+                        </div>
+                    </section>
         </main>
-    </div>
 
-    <script src="main.js"></script>
+        <footer>
+            <p>&copy; 2025 Isadora Aguirre Dal Conte.</p>
+
+            <script src="main.js"></script>
+            <script>
+                lucide.createIcons();
+            </script>
 </body>
 
 </html>

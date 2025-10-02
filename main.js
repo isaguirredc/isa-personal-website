@@ -6,14 +6,14 @@ const musicBtn = document.getElementById("music-toggle");
 let siteStarted = false;
 
 function startSite() {
-    if (siteStarted) return; 
+    if (siteStarted) return;
     siteStarted = true;
 
-    startScreen.style.display = "none";      
-    siteContent.style.display = "block";     
+    startScreen.style.display = "none";
+    siteContent.style.display = "block";
     setTimeout(() => siteContent.style.opacity = 1, 10);
 
-    music.play().catch(() => console.log("Poxa, o autoplay bloqueado! Clica no botão de música para curtir o sonzinho :)"));
+    music.play().catch(() => console.log("Poxa, o autoplay está bloqueado! Clica no botão de música para curtir o sonzinho :)"));
 }
 
 document.addEventListener("keydown", (e) => {
@@ -27,17 +27,21 @@ startScreen.addEventListener("click", startSite);
 musicBtn.addEventListener("click", () => {
     if (music.paused) {
         music.play();
-        musicBtn.textContent = "🔊";
+        // muda o ícone para volume-2
+        musicBtn.innerHTML = '<i data-lucide="volume-2"></i>';
     } else {
         music.pause();
-        musicBtn.textContent = "🔇";
+        // muda o ícone para volume-off
+        musicBtn.innerHTML = '<i data-lucide="volume-off"></i>';
     }
+    // atualiza os ícones do Lucide
+    lucide.createIcons();
 });
 
-function updateClock() {
-    const now = new Date();
-    const clock = document.getElementById("clock");
-    clock.textContent = now.toLocaleTimeString();
-}
-setInterval(updateClock, 1000);
-updateClock();
+
+// CURSOR
+const cursor = document.querySelector('.cursor-dot');
+document.addEventListener('mousemove', e => {
+    cursor.style.top = e.clientY + 'px';
+    cursor.style.left = e.clientX + 'px';
+});

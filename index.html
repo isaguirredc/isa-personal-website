@@ -11,6 +11,8 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!--ícone da aba do site-->
+    <link rel="icon" href="assets/tea.png" type="image/png">
 </head>
 
 <body>
@@ -21,7 +23,7 @@
     <!-- foi uma gambiarra pois a música só tocava quando clicava no ícone-->
     <div id="start-screen">
         <h1 id="press-start">PRESS ENTER TO START</h1>
-        <h2 id="subtitle">(warning: music playing in 3...2..1...)</h2>
+        <h2 id="subtitle">(warning: music playing in 3...2...1...)</h2>
     </div>
 
     <div id="site-content">
@@ -35,10 +37,9 @@
 
         <!-- barra de navegação-->
         <nav class="navbar">
-            <div class="logo">.・。.・゜✭・.・✫・゜・。.・゜✭・.・✫・゜・。.・゜✭・.</div>
             <ul>
                 <li><a href="#home"><i data-lucide="home"></i></a></li>
-                <li><a href="#about me"><i data-lucide="user"></i></a></li>
+                <li><a href="#about"><i data-lucide="user"></i></a></li>
                 <li><a href="#skills"><i data-lucide="layers"></i></a></li>
                 <li><a href="#education"><i data-lucide="book-open"></i></a></li>
                 <li><a href="#experience"><i data-lucide="briefcase"></i></a></li>
@@ -50,81 +51,126 @@
         <!-- hero = destaque, 1 por página, sempre no topo da página -->
         <header id="home" class="hero">
             <h1>Isadora Aguirre Dal Conte</h1>
-            <p class="tagline">Estudante de Ciência da Computação</p>
+            <p class="tagline">Estudante do universo da computação e atualmente focada em desenvolvimento Fullstack</p>
             <div class="hero-icons">
                 <a href="https://www.linkedin.com/in/isadora-aguirre-dal-conte-a1b47b2b1" target="_blank"><i
                         data-lucide="linkedin"></i></a>
                 <a href="https://github.com/isaguirredc" target="_blank"><i data-lucide="github"></i></a>
             </div>
+
+            <a href="#about" class="hero-btn">Saiba mais sobre mim</a>
+
+            <div class="scroll-down">
+                <i data-lucide="chevron-down"></i>
+            </div>
+
+            <div class="stars-container"></div> <!-- estrelas -->
         </header>
 
         <main>
-            <section id="about me" class="section">
-                <!-- inserir gif-->
-                <img src="assets/dj.gif" alt="Gif animado." class="about-gif">
-                <h2>Sobre Mim</h2>
+            <!-- SOBRE MIM -->
+
+            <section id="about" class="section">
+                <img src="assets/Drawing Doodle Sticker(2).gif" alt="Gif sapinho dando boas vindas." class="gif">
+                <h2>Quem sou eu?</h2>
                 <div class="card">
-                    <p>blablabla.</p>
+                    <p>
+                        Oi, eu sou a Isa! Tenho 19 anos e moro em Passo Fundo, RS. <br><br>
+                        Desde pequena, sempre fui curiosa e apaixonada por tecnologia.
+                        Hoje estudo <strong>Ciência da Computação</strong>, onde exploro desde
+                        desenvolvimento de sistemas até redes de computadores. <br><br>
+                        Além do código, gosto de me perder em músicas, livros e momentos criativos.
+                        Sou daquelas que acredita que cada detalhe faz diferença, e que a tecnologia
+                        pode ser um jeito lindo de transformar o mundo. ♡
+                    </p>
                 </div>
             </section>
 
+            <!-- HABILIDADES -->
             <section id="skills" class="section">
-                <!-- gif -->
-
-                <section id="skills" class="section">
-                    <h2>Habilidades</h2>
-                    <div class="card-grid">
-                        <div class="skill-card"><i data-lucide="code"></i>
-                            <p>HTML / CSS / JS</p>
-                        </div>
-                        <div class="skill-card"><i data-lucide="monitor"></i>
-                            <p>UI Design</p>
-                        </div>
-                        <div class="skill-card"><i data-lucide="cpu"></i>
-                            <p>Redes / Cisco</p>
-                        </div>
+                <img src="assets/Gym Health Sticker.gif" alt="Gif sapinho flexionando." class="gif">
+                <h2>Habilidades</h2>
+                <div class="card-grid">
+                    <div class="skill-card"><i data-lucide="brick-wall-shield"></i>
+                        <p>Cyber Security / Ethical Hacking</p>
                     </div>
-                </section>
-
-                <section id="education" class="section">
-                    <!-- inserir gif-->
-                    <h2>Educação</h2>
-                    <div class="card">
-                        <h3>Ciência da Computação - UTFPR</h3>
-                        <p>2023 - presente</p>
+                    <div class="skill-card"><i data-lucide="cpu"></i>
+                        <p>Hardware Architecture</p>
                     </div>
-                </section>
+                    <div class="skill-card"><i data-lucide="code"></i>
+                        <p>Python / Java </p>
+                    </div>
+                    <div class="skill-card"><i data-lucide="rss"></i>
+                        <p>Redes / Cisco Packet Tracer</p>
+                    </div>
+                </div>
+            </section>
 
-                <section id="experience" class="section">
-                    <!-- inserir gif-->
-                    <h2>Experiência profissional</h2>
+            <!-- EDUCAÇÃO -->
+            <section id="education" class="section">
+                <img src="assets/Drawing Doodle Sticker(1).gif" alt="Gif sapinho nerd de óculos." class="gif">
+                <h2>Educação</h2>
+                <div class="card-grid">
                     <div class="card">
-                        <h3>Estágio em Suporte de TI - Prefeitura Municipal de Passo Fundo</h3>
+                        <h3>Ciência da Computação - ATITUS Educação</h3>
                         <p>2024 - presente</p>
-                        <ul <li>aaaaaaaaaaa.</li>
-                            <li>bbbbbbbbbbbb.</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section id="projects" class="section">
-                    <h2>⋆ Projetos ⋆</h2>
-                    <div class="card">
-                        <h3>Projeto 1</h3>
-                        <p>Descrição do projeto 1.</p>
                     </div>
                     <div class="card">
-                        <h3>Projeto 2</h3>
-                        <p>Descrição do projeto 2.</p>
+                        <h3>Inglês Nível C1 - Escola de idiomas Open Way</h3>
+                        <p>2021 - 2024</p>
                     </div>
+                    <div class="card">
+                        <h3>Ensino Médio - Colégio Salvatoriano Bom Conselho</h3>
+                        <p>2021 - 2023</p>
+                    </div>
+                </div>
+            </section>
 
-                    <section id="contact" class="section">
-                        <h2>Contato</h2>
-                        <div class="card">
-                            <p>Email: <strong>isaguirredc@gmail.com</strong></p>
-                        </div>
-                    </section>
+            <!-- EXPERIÊNCIA -->
+            <section id="experience" class="section">
+                <img src="assets/Work Sleep Sticker.gif" alt="Gif sapinho no escritório." class="gif">
+                <h2>Experiência Profissional</h2>
+                <div class="card">
+                    <h3>Estágio em Suporte de TI - Prefeitura de Passo Fundo</h3>
+                    <h3>2024 - presente</h3>
+                    <p>Auxílio no Sistema de Gestão Escolar</p>
+                    <p>Atendimento ao usuário</p>
+                    <p>Manutenção de computadores</p>
+                    <p>Configuração de redes</p>
+
+                </div>
+            </section>
+
+            <!-- PROJETOS -->
+            <section id="projects" class="section">
+                <img src="assets/Drawing Doodle Sticker.gif" alt="Gif sapinho tendo uma ideia." class="gif">
+                <h2>Projetos</h2>
+                <div class="card">
+                    <h3>Dinamômetro Manual</h3>
+                    <p>Medidor de força para pacientes neuroreabilitativos e atletas.</p>
+                </div>
+                <div class="card">
+                    <h3>Site Pessoal</h3>
+                    <p>Portfólio online para apresentar minhas habilidades e projetos.</p>
+                </div>
+                <div class="card">
+                    <h3>Projetos acadêmicos</h3>
+                    <p>Desenvolvimento de sistemas e aplicações durante o curso.</p>
+                </div>
+            </section>
+
+            <!-- CONTATO -->
+            <section id="contact" class="contact-section">
+                <img src="assets/bye.gif" alt="Gif sapinho saindo pela porta (de ré)." class="gif-especial">
+                <h2>✧ Vamos Conversar? ✧</h2>
+                <p>Quer trocar uma ideia ou trabalhar comigo? Me chama no e-mail:</p>
+                <a href="mailto:isaguirredc@gmail.com" class="contact-btn">✉ isaguirredc@gmail.com</a>
+            </section>
         </main>
+
+
+
+
 
         <footer>
             <p>&copy; 2025 Isadora Aguirre Dal Conte.</p>

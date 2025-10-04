@@ -18,10 +18,10 @@ Portfólio desenvolvido para apresentar habilidades, projetos, formação e expe
 
 ## Estrutura
 
-**index.html** — Estrutura semântica e seções com IDs
-**style.css** — Estilos, variáveis, grid, flexbox e animações
-**main.js** — Música, cursor, animações e rolagem
-**assets/** — Ícones e imagens
+- **index.html** — Estrutura semântica e seções com IDs
+- **style.css** — Estilos, variáveis, grid, flexbox e animações
+- **main.js** — Música, cursor, animações e rolagem
+- **assets/** — Ícones e imagens
 
 ---
 
